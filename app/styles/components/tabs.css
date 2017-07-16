@@ -1,0 +1,30 @@
+.tabs-container {
+  width: 100%;
+}
+
+.tabs-nav-item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 6px 6px 0 0;
+  border: 1px solid transparent;
+}
+
+.tabs-nav-item.active {
+  font-weight: bold;
+  border-color: #bbb #bbb transparent #bbb;
+  background: #fff;
+}
+
+.tabs-content {
+  margin-top: -1px;
+  width: 400px;
+  min-height: 250px;
+  padding: 20px;
+  border: 1px solid #bbb;
+}

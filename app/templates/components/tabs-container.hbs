@@ -1,0 +1,17 @@
+<div class="tabs-nav">
+  {{#each buttons as |button|}}
+    <div
+      class={{if (eq activeId button.elementId) "tabs-nav-item active" "tabs-nav-item"}}
+      {{action "select" button.elementId}}
+    >
+      <span>{{button.title}}</span>
+    </div>
+  {{/each}}
+</div>
+<div class="tabs-content">
+  {{yield
+    (hash
+      panel=(component "tabs-container.tab-panel" parent=this activeId=activeId)
+    )
+  }}
+</div>
